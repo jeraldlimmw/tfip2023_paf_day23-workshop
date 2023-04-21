@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+</head>
+<body>
+    <h1>Order Details</h1>
+    <table data-th-object="${orderDetails}">
+        <tr>
+            <td>Order ID:</td>
+            <td data-th-text="*{id}"></td>
+        </tr>
+        <tr>
+            <td>Order Date:</td>
+            <td data-th-text="*{orderDate}"></td>
+        </tr>
+        <tr>
+            <td>Customer ID:</td>
+            <td data-th-text="*{customerId}"></td>
+        </tr>
+        <tr>
+            <td>Total Price:</td>
+            <td data-th-text="*{totalPrice}"></td>
+        </tr>
+        <tr>
+            <td>Cost Price:</td>
+            <td data-th-text="*{costPrice}"></td>
+        </tr>
+    </table>
+</body>
+</html>
